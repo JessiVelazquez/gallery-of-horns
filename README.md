@@ -20,3 +20,14 @@ Start time: 2:15
 Finish time: 2:55
 
 Actual time needed to complete: 40 min
+
+
+Feature #3: Bootstrap
+
+Estimated time needed to complete: 1 hour
+
+Start time: 3:00
+
+Finish time: 3:20
+
+Actual time needed to complete: 20 min

@@ -1,4 +1,7 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Card from 'react-bootstrap/Card';
+
 
 class HornedBeast extends React.Component {
 
@@ -17,15 +20,22 @@ class HornedBeast extends React.Component {
     console.log('likes', this.likeImage);
     return (
       <div id="className">
-        <h2>{this.props.title}</h2>
-        <p>{this.props.description}</p>
-        <h2>❤️{this.state.numberOfLikes}</h2>
-        <img
-          onClick={likeImage}
-          src={this.props.url}
-          alt={this.props.alt}
-          title={this.props.title}
-        />
+        <Card style={{ width: '18rem' }}>
+          <Card.Body>
+            <Card.Title>{this.props.title}</Card.Title>
+            <Card.Text>
+              {this.props.description}
+            </Card.Text>
+            <Card.Text>
+              ❤️{this.state.numberOfLikes}
+            </Card.Text>
+            <Card.Img
+              onClick={likeImage}
+              src={this.props.url}
+              alt={this.props.alt}
+              title={this.props.title} />
+          </Card.Body>
+        </Card>
       </div>
     );
   }
