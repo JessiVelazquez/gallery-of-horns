@@ -2,10 +2,21 @@
 
 Feature #1: Display Images
 
-Estimated time needed to complete:
+Estimated time needed to complete: 60 min
 
-Start time:
+Start time: 1:15
 
-Finish time:
+Finish time: 2:10
 
-Actual time needed to complete:
+Actual time needed to complete: 55 min
+
+
+Feature #2: Allow users to vote for their favorite beast
+
+Estimated time needed to complete: 1 hour
+
+Start time: 2:15
+
+Finish time: 2:55
+
+Actual time needed to complete: 40 min

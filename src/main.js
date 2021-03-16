@@ -3,6 +3,12 @@ import HornedBeast from './HornedBeast';
 
 class Main extends React.Component {
 
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {
+  //   };
+  // }
+
   render() {
     let data = require('./assets/data.json');
 
@@ -23,8 +29,6 @@ class Main extends React.Component {
     );
   }
 }
-
-
 
 
 export default Main;
