@@ -14,23 +14,30 @@ class HornedBeast extends React.Component {
 
 
   render() {
+
     const likeImage = () => {
-      this.setState({numberOfLikes: this.state.numberOfLikes + 1});
+      this.setState({ numberOfLikes: this.state.numberOfLikes + 1 });
     };
-    console.log('likes', this.likeImage);
+
+    const popOut = () => {
+      this.props.displayAsModal(this.props.index);
+    };
+   
     return (
       <div id="className">
-        <Card style={{ width: '18rem' }}>
+        <Card style={{ width: '18rem' }} bg='primary' text='dark' border='light'>
           <Card.Body>
-            <Card.Title>{this.props.title}</Card.Title>
-            <Card.Text>
+            <Card.Title onClick={likeImage}>
+              {this.props.title}
+            </Card.Title>
+            <Card.Text onClick={likeImage}>
               {this.props.description}
             </Card.Text>
-            <Card.Text>
+            <Card.Text onClick={likeImage}>
               ❤️{this.state.numberOfLikes}
             </Card.Text>
             <Card.Img
-              onClick={likeImage}
+              onClick={popOut}
               src={this.props.url}
               alt={this.props.alt}
               title={this.props.title} />
