@@ -31,3 +31,15 @@ Start time: 3:00
 Finish time: 3:20
 
 Actual time needed to complete: 20 min
+
+
+
+Feature: Display a Modal 
+
+Estimate of time needed to complete: 2 hours 
+
+Start time: 1:00pm 
+
+Finish time: 5:00pm 
+
+Actual time needed to complete: 4 hours
