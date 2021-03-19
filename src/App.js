@@ -14,7 +14,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       gallery: data,
-      filteredData: null,
+      filteredData: data,
       // numberOfHorns: [],
       displayModal: false,
       favoriteBeast: {},
@@ -57,7 +57,8 @@ class App extends React.Component {
           <SelectedBeast
             show={this.state.displayModal}
             handleClose={this.handleClose}
-            favoriteBeast={this.state.favoriteBeast}/>
+            favoriteBeast={this.state.favoriteBeast}
+            />
           <Footer />
         </header>
       </div>

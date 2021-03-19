@@ -12,7 +12,7 @@ class FormData extends React.Component {
       <>
         <Dropdown onSelect={this.props.handleInput}>
           <Dropdown.Toggle variant="success" id="dropdown-basic">
-            Dropdown Button
+            Select by Number of Horns
           </Dropdown.Toggle>
 
           <Dropdown.Menu>
